@@ -5,6 +5,15 @@
 		
 }
 
+.follow-us-text{
+	font-size: 16px;
+	color: #1683F3;
+	margin-right: -20px;
+	margin-top: 18px;
+	display: inline-block
+}
+
+
 .center-text-container{
 	margin: 0 auto;
 	text-align: center;
