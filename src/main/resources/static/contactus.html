@@ -30,11 +30,11 @@
         </div>
 		</a>
 		
-		<a href="packages.html">
+		<!--<a href="packages.html">
         <div class="uk-navbar-item">
 			<span>Packages</span>
         </div>
-		</a>
+		</a>-->
 		
 		<a href="contactus.html">
         <div class="uk-navbar-item">
@@ -43,12 +43,11 @@
 		</a>
 		
     </div>
-</nav>
-	  
-	
+</nav> <div class="center-text-container"><h1>Address:</h1><p>Plot No 2, Tarake's Resudebce</p><p> OppositeJoggers Park</p><p>New Sneh Nagar</p><p>Nagpur-440015</p></div>
 	 <!--The div element for the map -->
-    <div id="map"></div>
-
+	<div class="center-text-container">
+    <div id="map" style="width: 600px; height 600px; text-align: center; margin: 20px auto; display: inline-block"></div>
+</div>
     <!-- 
      The `defer` attribute causes the callback to execute after the full HTML
      document has been parsed. For non-blocking uses, avoiding race conditions,
@@ -63,7 +62,7 @@
 		// Initialize and add the map
 function initMap() {
   // The location of Uluru
-  const uluru = { lat: -25.344, lng: 131.031 };
+  const uluru = { lat: 21.106442, lng: 79.067729 };
   // The map, centered at Uluru
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 15,
