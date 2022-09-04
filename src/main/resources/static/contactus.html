@@ -52,36 +52,6 @@
 </nav> <div class="center-text-container"><h1>Address:</h1><p>Plot No 2, Tarake's Resudebce</p><p> OppositeJoggers Park</p><p>New Sneh Nagar</p><p>Nagpur-440015</p></div>
 	 <!--The div element for the map -->
 	<div class="center-text-container">
-    <div id="map" style="width: 600px; height 600px; text-align: center; margin: 20px auto; display: inline-block"></div>
-</div>
-    <!-- 
-     The `defer` attribute causes the callback to execute after the full HTML
-     document has been parsed. For non-blocking uses, avoiding race conditions,
-     and consistent behavior across browsers, consider loading using Promises
-     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
-    -->
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-      defer
-    ></script>
-	<script type="text/javascript">
-		// Initialize and add the map
-function initMap() {
-  // The location of Uluru
-  const uluru = { lat: 21.106442, lng: 79.067729 };
-  // The map, centered at Uluru
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 15,
-    center: uluru,
-  });
-  // The marker, positioned at Uluru
-  const marker = new google.maps.Marker({
-    position: uluru,
-    map: map,
-  });
-}
-
-window.initMap = initMap;
-	</script>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14888.614450983676!2d79.05023253955079!3d21.106441100000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4bfdd783626a3%3A0xed007249ba60d411!2sBluebell%20Baby%20Photography(A%20Unit%20of%20Varam%20Photography)!5e0!3m2!1sen!2sus!4v1662318790516!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 </body>
 </html>
