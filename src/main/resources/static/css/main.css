@@ -1,0 +1,55 @@
+/* CSS Document */
+.uk-navbar-item{
+	font-size: 16px ;
+	font-weight: bold 
+		
+}
+
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+
+.img-item{
+	width: 400px;
+	border-radius: 5px;
+}
+
+.img-item:hover{
+	width: 800px;
+	border-radius: 5px;
+	position: absolute
+}
+
+.round-corners{
+	border-radius: 15px;
+}
+
+.category-item{
+	width: 500px;
+	margin: 50px;
+	display: inline-block;
+}
+
+.category-item:hover{
+	cursor: pointer
+}
+
+.container{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	text-align: center;
+}
+
+.container-with-margin{
+	margin: 0px;
+	padding: 100px;
+	width: 80%;
+	text-align: center;
+}
+.container-with-margin img{
+	border-radius: 15px;
+}

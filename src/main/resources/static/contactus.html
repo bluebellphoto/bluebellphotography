@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.6/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.6/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.6/dist/js/uikit-icons.min.js"></script>
+	  
+	  <link rel="stylesheet" href="css/main.css" />
+
+    <title>Contact Us</title>
+  </head>
+<body>
+	  
+	  <nav class="uk-navbar-container uk-margin" uk-navbar>
+    <div class="uk-navbar-left">
+
+		<div class="uk-navbar-item">
+            <img src="./images/Horizontal%20logo.png" style = "width:250px; padding: 5px 40px">
+		</div>
+		 <a href="index.html">
+        <div class="uk-navbar-item">
+           <span>Portfolio </span>
+        </div>
+		</a>
+		
+		<a href="packages.html">
+        <div class="uk-navbar-item">
+			<span>Packages</span>
+        </div>
+		</a>
+		
+		<a href="contactus.html">
+        <div class="uk-navbar-item">
+			<span>Contact</span>
+        </div>
+		</a>
+		
+    </div>
+</nav>
+	  
+	
+	 <!--The div element for the map -->
+    <div id="map"></div>
+
+    <!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
+	<script type="text/javascript">
+		// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  const uluru = { lat: -25.344, lng: 131.031 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 15,
+    center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+
+window.initMap = initMap;
+	</script>
+</body>
+</html>
